@@ -21,7 +21,11 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Configuration
-@ComponentScan({"org.activiti.rest.editor", "org.activiti.rest.diagram"})
+@ComponentScan({
+    "org.activiti.rest.editor", 
+    "org.activiti.rest.diagram",
+    "hu.sagax.hedgehog.asset"
+})
 @EnableAsync
 public class DispatcherServletConfiguration extends WebMvcConfigurationSupport {
 

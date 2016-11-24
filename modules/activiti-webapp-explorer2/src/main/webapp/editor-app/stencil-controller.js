@@ -62,7 +62,8 @@ angular.module('activitiModeler')
             /*
              StencilSet items
              */
-            $http({method: 'GET', url: KISBPM.URL.getStencilSet()}).success(function (data, status, headers, config) {
+//            $http({method: 'GET', url: KISBPM.URL.getStencilSet()}).success(function (data, status, headers, config) {
+            $http({method: 'GET', url: '/activiti-explorer/service/stencilset/modeldefinition/basic'}).success(function (data, status, headers, config) {
 
             	var quickMenuDefinition = ['UserTask', 'EndNoneEvent', 'ExclusiveGateway', 
             	                           'CatchTimerEvent', 'ThrowNoneEvent', 'TextAnnotation',
